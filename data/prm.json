@@ -1,0 +1,13 @@
+{
+	"Script Info": {
+		"ResX": 3840,
+		"ResY": 2160
+	},
+	"V4 Styles": {
+		"Format": "Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding",
+		"Styles": {
+			"Topic": "Ubuntu Bold,180,65535,65535,65535,-2147483640,0,0,0,0,0,5,50,30,1600,0,0",
+			"Title": "Ubuntu Bold,180,65535,65535,65535,-2147483640,0,0,0,0,0,5,50,1700,900,0,0"
+		}
+	}
+}
