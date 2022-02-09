@@ -1,0 +1,3 @@
+mutagen==1.45.1
+eyed3==0.9.6
+mp3chaps==0.4
