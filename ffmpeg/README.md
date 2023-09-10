@@ -1,3 +1,8 @@
+# Video generation for podcast
+
+Input: `data` folder
+Output: `out.mp4` video file
+
 # Build docker image
 
 `docker build --rm --tag ffmpeg .`
