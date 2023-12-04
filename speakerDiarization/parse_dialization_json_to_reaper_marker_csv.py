@@ -53,8 +53,4 @@ if __name__ == "__main__":
     parser.add_argument("-f", "--file", help="Path to diarization json file", required=True)
     args = parser.parse_args()
     p_diarization_json_path = args.file
-
-
-    # diarization_json_path = "/home/users/andreya1/Documents/REAPER Media/e103/chapters/speakers.json"
-    # e_diarization_json_path = "/home/users/andreya1/Documents/REAPER Media/e104/chapters/replicate-prediction-7meks6bcmritxtbv22gz2mgkwa.json"
     DiarizationParser.parse(p_diarization_json_path)
