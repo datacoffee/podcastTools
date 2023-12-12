@@ -16,4 +16,7 @@
 3. Output filename is `out.mp4`
 
 # Run container with ffmpeg to mix in background music
-`docker run --rm -v $(pwd)/<folder_with_episode>:/opt/data ffmpeg bash -c "cd /opt; ./mixaudio.sh /opt/data/<episode_file_name>.mp3"
+1. Run container via:
+`docker run --rm -v $(pwd)/<folder_with_episode>:/opt/data ffmpeg bash -c ""cd /opt/data; ../mixaudio.sh <episode_file_name>.mp3""
+
+2. Output filename is `<episode_file_name>_music.mp3`
