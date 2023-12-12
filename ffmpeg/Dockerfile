@@ -6,6 +6,7 @@ RUN apt-get install -y figlet
 
 COPY pod2video.sh /opt/
 COPY mixaudio.sh /opt/
+COPY background.mp3 /opt/
 
 # could be sh script
 CMD ["/opt/pod2video.sh"]

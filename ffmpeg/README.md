@@ -2,7 +2,7 @@
 
 `docker build --rm --tag ffmpeg .`
 
-# Run container
+# Run container with ffmpeg to generate videofile
 
 1. `data` folder must contain:
 - `pic.png` background picture
@@ -14,3 +14,6 @@
 `docker run --rm -v $(pwd)/data:/opt/data ffmpeg`
 
 3. Output filename is `out.mp4`
+
+# Run container with ffmpeg to mix in background music
+`docker run --rm -v $(pwd)/<folder_with_episode>:/opt/data ffmpeg bash -c "cd /opt; ./mixaudio.sh /opt/data/<episode_file_name>.mp3"
