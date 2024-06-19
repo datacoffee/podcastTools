@@ -54,12 +54,14 @@ chapters = [
 print(tag.artist)
 print(tag.title)
 
-header_html = """<p><strong>Ведущие подкаста "Data Coffee" обсуждают новости и делятся своими мыслями!</strong></p>
+header_html = """<p><strong>Ведущие подкаста 'Data Coffee' обсуждают новости и делятся своими мыслями!</strong></p>
 <p><br></p>
 <p>Shownotes:</p>\n"""
 footer_html = """<p><br></p>
-<p>Сайт: <a href="https://datacoffee.link/">https://datacoffee.link</a>, канал в Telegram: <a href="https://t.me/datacoffee">https://t.me/datacoffee</a>, профиль в Twitter: <a href="https://twitter.com/_DataCoffee_">https://twitter.com/_DataCoffee_</a></p>
-<p>Чат подкаста, где можно предложить темы для будущих выпусков, а также обсудить эпизоды: <a href="https://t.me/datacoffee_chat">https://t.me/datacoffee_chat</a></p>"""
+<p>Сайт: <a href='https://datacoffee.link/'>https://datacoffee.link</a></p>
+<p>Telegram: <a href='https://t.me/datacoffee'>https://t.me/datacoffee</a></p>
+<p>Mastodon: <a href='https://techhub.social/@datacoffee'>https://techhub.social/@datacoffee</a></p>
+<p>Чат подкаста: <a href='https://t.me/datacoffee_chat'>https://t.me/datacoffee_chat</a></p>"""
 chapters_html = ""
 
 for chapter in tag.chapters:
@@ -77,9 +79,9 @@ for chapter in tag.chapters:
 
     url_tag = chapter.sub_frames.get(b"WXXX")
     if url_tag and len(url_tag) > 0:
-        chapters_html += f"""<p>{chapter_time} <a href="{url_tag[0].url}">{new_chapter["Text"]}</a></p>\n"""
+        chapters_html += f"""<p>{chapter_time} <a href='{url_tag[0].url}'>{new_chapter['Text']}</a></p>\n"""
     else:
-        chapters_html += f"""<p>{chapter_time} {new_chapter["Text"]}</p>\n"""
+        chapters_html += f"""<p>{chapter_time} {new_chapter['Text']}</p>\n"""
 
 print(header_html, chapters_html, footer_html, sep='')
 
