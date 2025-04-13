@@ -1,0 +1,13 @@
+{
+    "Script Info": {
+        "ResX": 3840,
+        "ResY": 2160
+    },
+    "V4 Styles": {
+        "Format": "Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding",
+        "Styles": {
+            "Topic": "Comfortaa,180,&H000e2958&,&H000e2958&,&H000e2958&,-2147483640,0,0,0,0,0,5,258,30,1650,0,0",
+            "Title": "Comfortaa,180,&H000e2958&,&H000e2958&,&H000e2958&,-2147483640,0,0,0,0,0,5,258,1700,1150,0,0"
+        }
+    }
+}
